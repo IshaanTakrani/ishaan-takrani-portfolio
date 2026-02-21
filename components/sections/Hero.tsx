@@ -35,7 +35,7 @@ export default function Hero() {
           direction="top"
           delay={150}
           stepDuration={0.5}
-          className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-[0.95] mb-10"
+          className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-[0.95] mb-10 font-syne"
         />
 
         {/* Divider */}

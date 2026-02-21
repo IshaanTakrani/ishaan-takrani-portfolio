@@ -27,41 +27,45 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --font-syne: var(--font-syne);
 }
 
 :root {
   --radius: 0.25rem;
 
+  /* Heading font */
+  --font-heading: var(--font-geist-sans);
+
   /* Orange accent – decorative only */
-  --brand: #F97316;
+  --brand: #f97316;
 
   /* ── Dark mode tokens ── */
   --background: #111111;
-  --foreground: #FAFAFA;
+  --foreground: #fafafa;
 
-  --card: #1A1A1A;
-  --card-foreground: #FAFAFA;
+  --card: #1a1a1a;
+  --card-foreground: #fafafa;
 
-  --popover: #1A1A1A;
-  --popover-foreground: #FAFAFA;
+  --popover: #1a1a1a;
+  --popover-foreground: #fafafa;
 
   /* Primary = orange (shadcn Button default variant) */
   --primary: oklch(0.63 0.22 40);
   --primary-foreground: oklch(1 0 0);
 
-  --secondary: #1C1C1C;
-  --secondary-foreground: #FAFAFA;
+  --secondary: #1c1c1c;
+  --secondary-foreground: #fafafa;
 
   --muted: #222222;
   --muted-foreground: #888888;
 
   --accent: #222222;
-  --accent-foreground: #FAFAFA;
+  --accent-foreground: #fafafa;
 
   --destructive: oklch(0.577 0.245 27.325);
 
-  --border: #2E2E2E;
-  --input: #2E2E2E;
+  --border: #2e2e2e;
+  --input: #2e2e2e;
   --ring: oklch(0.75 0.18 48);
 }
 
@@ -78,12 +82,17 @@
   body {
     background: var(--background);
     color: var(--foreground);
+    /* font-family: var(--font-geist-sans), system-ui, sans-serif; */
     font-family: var(--font-geist-sans), system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading), system-ui, sans-serif;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
